@@ -1,0 +1,455 @@
+
+.OurComprehensive{
+    width: 100%;    
+    height: auto;
+    background-color: #000000; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    //Верхний блок
+    .headerBlockBot{
+            width: 95%;
+            height: 55vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1%;
+            .headerBlockBotLeft{
+                width: 70%;
+                height: 95%;
+                background-color: #1A1A1A;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .LeftBlockTop{
+                    width: 80%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    .DigitalButton{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        .MainText{
+                            width: 60%;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 78px;
+                            .MainTextP{
+
+
+                            }
+                        }
+                        .img{
+                            height: 40%;
+                            background-color: transparent;
+                            border: transparent;
+                            cursor: pointer;
+                            position: relative;
+                            top: 10%;
+                            right: 5%;
+                        }
+                    }
+                    .NexGen{
+                        width: 100%;
+                        height: 10vh;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .MiniTxt{
+                            width: 80%;
+                            height: auto;
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: #676665;
+                        }
+                    }
+                }
+                .LeftBlockBot{
+                    width: 95%;
+                    height: 15vh;
+                    display: flex;
+                    justify-content: center;
+                    .Conteiner{
+                        background-color: #0F0F0F;
+                    }
+                }
+            }
+            .headerBlockBotRight{
+                width: 29%;
+                height: 95%;
+                background-color: #1A1A1A;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .marquee {
+    width: 100%;
+    max-width: 1420px;
+    overflow: hidden;
+    background: #0F0F0F;
+    height: 40px;
+    border-radius: 7px;
+    position: absolute;
+    top: 59vh;
+    right: 35vw;
+    display: flex;        
+    align-items: center;   
+    justify-content: center; 
+    }
+
+    .marqueeContent {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+    }
+
+    .marqueeItem {
+
+    font-weight: 600;
+    color: #676665;
+    font-family: "Roboto Flex", sans-serif;
+    padding: 0 30px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+        font-size: 20px;
+        text-transform: uppercase; 
+    }
+
+    .marqueeItem::after {
+    content: "•";
+    color: #CE7D63;
+    font-size: 24px;
+    position: absolute;
+    right: -8px;
+    }
+
+    .marqueeItem:last-child::after {
+    display: none;
+    }
+
+    @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    }
+
+
+
+    //right
+
+.headerBlockBotRight {
+    width: 99vw;    
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    
+    /* Оранжевый слой 80% поверх картинки */
+    background-image: 
+        linear-gradient(rgba(255, 140, 0, 0.3), rgba(255, 140, 0, 0.3)), 
+        url('../assets/b226f513f40323002014adf4315689b8accf4c55.png');
+        
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // transform: scaleX(-1); 
+
+
+
+
+    .insideBlockBotRight{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .viewAll {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        }
+
+        .viewAllCircle {
+            width: 42px;
+            height: 42px;
+
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: rgb(0, 0, 0);
+
+
+                        font-size: 20px;
+        }
+        .viewAll span {
+            color: #909090;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .ButOpaciti{
+            padding: 14px;
+            border-radius: 10px;
+            border: none;
+             background-color: rgba(255, 255, 255, 0.15); /* Полупрозрачный белый */
+            backdrop-filter: blur(10px);                  /* Эффект матового стекла */
+            -webkit-backdrop-filter: blur(20%); 
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+}//Слава велекому чату гпт, спасибо огромное, я так устал...
+
+.Space{
+    width: 100%;
+    height: 10vh;
+    background: #000;
+}
+
+
+
+
+// OURSERV
+.ReasonsChoose2{
+    width: 100%;    
+    height: auto;
+    background-color: #000000; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .BorderMenu2{
+        width: 95%;
+        height: 80vh;
+        background-color:#000000;   
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1px;
+        border: 2px solid #1f1f1F;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .InfoBlockText2{
+        width: 97%;
+        height: 15%;
+        border-radius: 6px;
+        background: #1f1f1F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Text522{
+            height: 80%;
+            width: 90%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }        
+        .InfoBlockTextP2{
+
+            color: #F9EFEC;
+            font-size: 44px;
+            font-weight: 600;
+            display: flex;
+            text-align: left;
+            // margin-right: 1360px;
+
+        }
+    }
+    .BotDivRow2{
+        height: 70%;
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .insideDivOurServRight{
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .TopOurServCard{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .TopOurServCardLEFT{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .ImageBorder{
+                        background: #1F1F1F;
+                        border: #333333;
+                    }
+                    p{
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 300;
+                        line-height: 150%;
+                        font-style: Medium;
+                          text-indent: 20px
+                    }
+                }
+                .TopOurServCardRIGHT{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p{
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 150%;
+                        font-style: Medium;
+                        text-indent: 20px
+                    }
+                }
+
+            }
+            .RightCardBottom{
+                width: 100%;
+                height: 85%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .RightCardBottomImg{
+                    width: 45%;
+                    height: 100%;
+                    border-radius: 20px;
+                    background-image: 
+
+                    url('../assets/Container.png');
+                    background-repeat: no-repeat; 
+                    background-size: cover;      
+                    background-position: center; 
+                }
+                .LeftCardBottomImg {
+                    width: 45%;
+                    height: 100%;
+                    border-radius: 20px;
+                    background-image: url('../assets/Container (1).png');
+                    background-repeat: no-repeat; 
+                    background-size: cover;      
+                    background-position: center;  
+                }
+
+            }
+    }
+    .ReasonsBotfour2{
+        width: 49%;
+        margin: 5px;
+        height: 55%;
+        border-radius: 14px;
+        background: #1f1f1F;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        .insideDivOurServ{
+            width: 80%;
+            height: 65%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .TopOurServCard{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .TopOurServCardLEFT{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .ImageBorder{
+                        background: #1F1F1F;
+                        border: #333333;
+                    }
+                    p{
+                        color: white;
+                        font-size: 30px;
+                        font-weight: 500;
+                        line-height: 150%;
+                        font-style: Medium;
+                          text-indent: 20px
+                    }
+                }
+                .TopOurServCardRIGHT{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p{
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 150%;
+                        font-style: Medium;
+                        text-indent: 20px
+                    }
+                }
+
+            }
+            .MidOurServCard{
+                width: 100%;
+                height: 40%;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                flex-direction: column;
+                p{
+                    font-weight: 400;
+                    font-style: regular;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #B3B3B2;
+                    letter-spacing: 0%;
+                }
+                .StartPrice{
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+
+                    font-weight: 400;
+                    font-style: Medium;
+                    font-size: 30px;
+                    line-height: 150%;
+                    color: #B3B3B2;
+                    letter-spacing: 0%;
+
+                }
+            }
+
+        }
+    }
+}
+

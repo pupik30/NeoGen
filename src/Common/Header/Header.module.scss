@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    width: 100%;    
+    height: auto;
+    background-color: #000000; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .headerBlockTop{
+        width: 95%;
+        height: 10vh;
+        background-color: #1A1A1A;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        margin-top: 30px;
+
+        .headerJC{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logoPhoto{
+                height: 24px;
+                width: 129px;
+            }
+            .nav{
+                width: 60%;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+
+
+               
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: "Roboto Mono", monospace;
+                    color: #81807E;
+                    background-color: #0F0F0F;
+                    width: 13vh;
+                    height: 6vh;
+                    border: none;
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   
+                }
+                .active{
+                      color:#E7BEB1 !important;
+                    }
+                a:hover{    
+                    color: #E7BEB1;
+                }
+                .ConectUs{
+                    background-color: #CE7D63;
+                    width: 13vh;
+                    height: 6vh;
+                    border: none;
+                    border-radius: 12px;
+                }
+            }
+            
+        }
+        
+    }
+    
+}
