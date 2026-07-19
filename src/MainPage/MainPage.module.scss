@@ -211,15 +211,15 @@
 
 
 .marquee {
-  width: 100%;
+  width: 80%;
   max-width: 1420px;
   overflow: hidden;
   background: #0F0F0F;
   height: 40px;
   border-radius: 7px;
-  position: absolute;
-  top: 59vh;
-  right: 35vw;
+//   position: absolute;
+//   top: 59vh;
+//   right: 35vw;
   display: flex;        
   align-items: center;   
   justify-content: center; 
