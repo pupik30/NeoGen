@@ -258,6 +258,7 @@
         flex-direction: column;
         padding:  20px 0px 20px 0px;
 
+
     }
     .InfoBlockText2{
         width: 97%;
@@ -583,41 +584,411 @@
         align-items: center;
 
         padding:  30px 0px 30px 0px;
+        margin: 8px 0 8px 0;
 
 
-        .ReasonsBotfour2{
-            width: 41%;
-            margin: 5px;
-            height: 85%;
-            border-radius: 14px;
-            background: #1f1f1F;
+.ReasonsBotfour2 {
+    width: 41%;
+    margin: 5px;
+    height: 85%;
+    border-radius: 14px;
+    background: #1f1f1F;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 5% 2% 3%; 
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+
+    // Верхняя строка
+    .headerRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: auto; 
+
+        .logoAndTitle {
             display: flex;
-            justify-content: center;
-            flex-direction: column;
             align-items: center;
+            gap: 12px;
+            
+
+            .logoWrapper {
+                width: 44px;
+                height: 44px;
+                background: #e2876e; 
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .logoIcon {
+                    width: 36px;
+                    height: 36px;
+                    object-fit: contain; 
+                }
+            }
+
+            .title {
+                color: #ffffff;
+                font-size: 36px;
+                font-weight: 700;
+                margin: 0;
+                letter-spacing: 0.5px;
+            }
         }
+
+        .visitBtn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #666666; 
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease;
+            transform: scale(1.2);
+
+            &:hover {
+                color: #ffffff;
+            }
+
+            .arrowIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                height: 45px;
+                border: 1px solid #333333;
+                border-radius: 50%;
+                font-size: 14px;
+                color: #ffbb00;
+            }
+        }
+    }
+
+
+    .tagsRow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+        justify-content: flex-start; 
+        scale: (1);
+        .tagItem {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #141414; 
+            padding: 10px 18px; 
+            border-radius: 30px; 
+            border: 1px solid #262626;
+            font-size: 20px;
+
+            .tagLabel {
+                color: #555555;
+            }
+
+            .tagValue {
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
         
         .Region{
             width: 54%;
             margin: 5px;
             height: 85%;
             display: flex;
-            justify-content: end;
+            justify-content: space-between;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
 
             .BacklGray{
                 width: 100%;
                 margin: 5px;
-                height: 70%;
+                height: 75%;
                 border-radius: 14px;
                 background: #1f1f1F;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
+                .BacklGrayText{
+                    width: 90%;
+                    height:80%;
+                    .BacklGrayTextTop{
+                        color: #F9EFEC;
+                        font-weight: 400;
+                        font-size: 52px;
+                        font-style: normal;   
+                        margin: 15px 0 15px 0;                     
+                    }
+                    .BacklGrayTextBot{
+                        color: #F9EFEC;
+                        font-weight: 400;
+                        font-size: 24px;
+                        font-style: normal; 
+                        line-height: normal;                       
+                    }
+                }
             }
+            .RegionBonusBtn{
+                width: 45%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .BacklGrayChallengeBtn{
+                    width:35%;
+                    height: 90%;
+                    border-radius: 12px;
+                    background: #1f1f1F;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+// текст
+                    color: #B3B3B2;
+                    font-weight: 400;
+                    font-size: 24px;
+                    font-style:normal;
+                }
+                .BacklGraySolutionBtn{
+                    width:35%;
+                    height: 90%;
+                    border-radius: 12px;
+                    background: #CE7D63;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    color: #0F0F0F;
+                    font-weight: 400;
+                    font-size: 24px;
+                    font-style:normal;
+                }
+                .BacklGrayResultsBtn{
+                    width:25%;
+                    height: 90%;
+                    border-radius: 12px;
+                    background: #1f1f1F;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    color: #B3B3B2;
+                    font-weight: 400;
+                    font-size: 24px;
+                    font-style:normal;
+                }
+
+            }
+
         }
     }
 
+}
+
+
+
+
+//asdasdasdaqwefsffasd
+
+
+
+.testimonialsSection {
+  background-color: #000000; 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+    .TESTIMONIALS{
+            width: 92.5%;
+
+        background-color:#000000;   
+        border-radius: 12px;
+
+        margin: 1px;
+        border: 2px solid #1f1f1F;
+
+
+
+        padding:  30px 30px 30px 30px;
+        margin: 8px 0 8px 0;
+    
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    border-radius: 12px;
+
+    border: 30px solid transparent; 
+    box-sizing: border-box;
+    margin-bottom: 1%;
+
+    .sectionTitle {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 600;
+                letter-spacing: 1px;
+    }
+
+    .allLink {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #cecbcb;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #ffffff;
+      }
+
+      .arrowIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #262626;
+        border-radius: 50%;
+        color: #f3f3f3;
+      }
+    }
+  }
+
+  .testimonialsGrid {
+    display: grid;
+    // Автоматические 4 колонки, сжимающиеся на мобильных устройствах
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; // Расстояние между карточками отзыва
+  }
+
+  .testimonialCard {
+    background-color: #141414;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    // Прозрачный толстый border заменяет padding карточки:
+    border: 30px solid transparent; 
+
+    .cardContent {
+      display: flex;
+      flex-direction: column;
+      gap: 16px; // Отступ между заголовком отзыва и основным текстом
+      
+      // Заставляем текстовый блок занять максимум места, прижав футер к низу
+      flex-grow: 1; 
+      
+      // Создаем визуальный отступ до футера с помощью нижней рамки
+      border-bottom: 30px solid transparent; 
+
+      .cardTitle {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+      }
+
+      .cardText {
+        color: #999999;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    }
+
+    .cardFooter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #262626; // Тонкая разделительная линия перед автором
+      border-top-width: 20px; // Увеличиваем верхнюю границу для отступа над линией
+      border-top-color: transparent; // Делаем отступ невидимым
+      box-sizing: border-box;
+      
+      // Повторно создаем саму линию через псевдоэлемент, так как border занят отступом
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #222222;
+      }
+
+      .authorInfo {
+        display: flex;
+        align-items: center;
+        gap: 12px; // Зазор между аватаркой и именем
+
+        .avatar {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          object-fit: cover;
+          background-color: #333; // Флбэк фон для картинки
+        }
+
+        .authorMeta {
+          display: flex;
+          flex-direction: column;
+          gap: 4px; // Расстояние между Именем и Должностью
+
+          .authorName {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          .authorRole {
+            color: #555555;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .actionBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: #1c1c1c;
+        border: 1px solid #262626;
+        border-radius: 50%;
+        color: #666666;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: #262626;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
 }

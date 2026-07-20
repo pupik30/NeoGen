@@ -287,16 +287,224 @@ return(
 
     <div className={styles.BorderMenu2}>
         <div className={styles.ReasonsBotfour2}>
-            
-        </div>
-        <div className={styles.Region}>
-            <div className={styles.BacklGray}>
 
+            <div className={styles.headerRow}>
+                <div className={styles.logoAndTitle}>
+
+                        <img src="src\assets\Icon Container12312312.png" alt="Klothink Logo" className={styles.logoIcon} />
+
+                    <h3 className={styles.title}>KLOTHINK</h3>
+                </div>
+                
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=apEqhwzCN60m2E-r" target="_blank" rel="noopener noreferrer" className={styles.visitBtn}>
+                    <span className={styles.arrowIcon}>↗</span>
+                    <span className={styles.btnText}>VISIT WEBSITE</span>
+                </a>
+            </div>
+
+            {/* Нижняя строка: Теги / Категории */}
+            <div className={styles.tagsRow}>
+                <div className={styles.tagItem}>
+                    <span className={styles.tagLabel}>Industry</span>
+                    <span className={styles.tagValue}>E-commerce</span>
+                </div>
+                <div className={styles.tagItem}>
+                    <span className={styles.tagLabel}>Service Utilized</span>
+                    <span className={styles.tagValue}>Design & Development</span>
+                </div>
+            </div>
+        </div>
+
+        <div className={styles.Region}>
+            <div className={styles.RegionBonusBtn}>
+                <div className={styles.BacklGrayChallengeBtn}>
+                    Challenge
+                </div>
+                <div className={styles.BacklGraySolutionBtn}>
+                    Solution    
+                </div>
+                <div className={styles.BacklGrayResultsBtn}>
+                    Results
+                </div>
+            </div>
+
+            <div className={styles.BacklGray}>
+                <div className={styles.BacklGrayText}>
+                    <div className={styles.BacklGrayTextTop}>
+                            Solution
+                    </div>  
+                    <div className={styles.BacklGrayTextBot}>
+                    Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div className={styles.BorderMenu2}>
+        <div className={styles.ReasonsBotfour2}>
+
+            <div className={styles.headerRow}>
+                <div className={styles.logoAndTitle}>
+
+                        <img src="src\assets\Icon Container12312312.png" alt="Klothink Logo" className={styles.logoIcon} />
+
+                    <h3 className={styles.title}>Fitness Tracker App</h3>
+                </div>
+                
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=apEqhwzCN60m2E-r" target="_blank" rel="noopener noreferrer" className={styles.visitBtn}>
+                    <span className={styles.arrowIcon}>↗</span>
+                    <span className={styles.btnText}>VISIT WEBSITE</span>
+                </a>
+            </div>
+
+            {/* Нижняя строка: Теги / Категории */}
+            <div className={styles.tagsRow}>
+                <div className={styles.tagItem}>
+                    <span className={styles.tagLabel}>Industry</span>
+                    <span className={styles.tagValue}>Health & Fitness</span>
+                </div>
+                <div className={styles.tagItem}>
+                    <span className={styles.tagLabel}>Service Utilized</span>
+                    <span className={styles.tagValue}>Mobile App Development</span>
+                </div>
+            </div>
+        </div>
+
+        <div className={styles.Region}>
+            <div className={styles.RegionBonusBtn}>
+                <div className={styles.BacklGrayChallengeBtn}>
+                    Challenge
+                </div>
+                <div className={styles.BacklGraySolutionBtn}>
+                    Solution    
+                </div>
+                <div className={styles.BacklGrayResultsBtn}>
+                    Results
+                </div>
+            </div>
+
+            <div className={styles.BacklGray}>
+                <div className={styles.BacklGrayText}>
+                    <div className={styles.BacklGrayTextTop}>
+                            Solution
+                    </div>  
+                    <div className={styles.BacklGrayTextBot}>
+Leveraging our expertise in app development, we built an interactive mobile app with user-friendly features. The app allowed users to set personalized fitness goals, track their progress, and share achievements on social media platforms. Real-time data synchronization enabled users to access their data on multiple devices.                    </div>                   
+                </div>
             </div>
         </div>
     </div>
     
 </section>    
+    {/*----------------------------------------- пробел ----------------------------------------- */}
+    <section className={styles.Space}></section>
+    {/*----------------------------------------- пробел ----------------------------------------- */}
+<section className={styles.testimonialsSection}>
+
+
+
+
+
+    <div className={styles.TESTIMONIALS}>
+        {/* Шапка секции */}
+        <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>TESTIMONIALS</h2>
+            <a href="#all" className={styles.allLink}>
+            <span className={styles.arrowIcon}>↗</span>
+            <span className={styles.linkText}>ALL TESTIMONIALS</span>
+            </a>
+        </div>
+
+        {/* Сетка отзывов */}
+        <div className={styles.testimonialsGrid}>
+            
+            {/* Карточка 1 */}
+            <article className={styles.testimonialCard}>
+            <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>NEXGEN TURNED OUR BUSINESS AROUND!</h3>
+                <p className={styles.cardText}>
+                Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                </p>
+            </div>
+            <div className={styles.cardFooter}>
+                <div className={styles.authorInfo}>
+                <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Sarah Thompson" className={styles.avatar} />
+                <div className={styles.authorMeta}>
+                    <span className={styles.authorName}>Sarah Thompson</span>
+                    <span className={styles.authorRole}>CEO of BlueBloom</span>
+                </div>
+                </div>
+                <button className={styles.actionBtn} aria-label="Read more">↗</button>
+            </div>
+            </article>
+
+            {/* Карточка 2 */}
+            <article className={styles.testimonialCard}>
+            <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>NEXGEN TURNED OUR BUSINESS AROUND!</h3>
+                <p className={styles.cardText}>
+                Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                </p>
+            </div>
+            <div className={styles.cardFooter}>
+                <div className={styles.authorInfo}>
+                <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Wade Warren" className={styles.avatar} />
+                <div className={styles.authorMeta}>
+                    <span className={styles.authorName}>Wade Warren</span>
+                    <span className={styles.authorRole}>Art Director</span>
+                </div>
+                </div>
+                <button className={styles.actionBtn} aria-label="Read more">↗</button>
+            </div>
+            </article>
+
+            {/* Карточка 3 */}
+            <article className={styles.testimonialCard}>
+            <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>WORKING WITH NEXGEN WAS A PLEASURE.</h3>
+                <p className={styles.cardText}>
+                Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.
+                </p>
+            </div>
+            <div className={styles.cardFooter}>
+                <div className={styles.authorInfo}>
+                <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Lisa Williams" className={styles.avatar} />
+                <div className={styles.authorMeta}>
+                    <span className={styles.authorName}>Lisa Williams</span>
+                    <span className={styles.authorRole}>CEO of HealthTech</span>
+                </div>
+                </div>
+                <button className={styles.actionBtn} aria-label="Read more">↗</button>
+            </div>
+            </article>
+
+            {/* Карточка 4 */}
+            <article className={styles.testimonialCard}>
+            <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>NEXGEN'S WEB DESIGN TEAM BROUGHT OUR VISION TO LIFE.</h3>
+                <p className={styles.cardText}>
+                Their responsive design ensures our website looks stunning on all devices, contributing to increased user engagement.
+                </p>
+            </div>
+            <div className={styles.cardFooter}>
+                <div className={styles.authorInfo}>
+                <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Jennifer Lee" className={styles.avatar} />
+                <div className={styles.authorMeta}>
+                    <span className={styles.authorName}>Jennifer Lee</span>
+                    <span className={styles.authorRole}>COO of Foodie Haven</span>
+                </div>
+                </div>
+                <button className={styles.actionBtn} aria-label="Read more">↗</button>
+            </div>
+            </article>
+    </div>
+        </div>
+</section>
+    {/*----------------------------------------- пробел ----------------------------------------- */}
+    <section className={styles.Space}></section>
+    {/*----------------------------------------- пробел ----------------------------------------- */}
+
 
 </>
 )
