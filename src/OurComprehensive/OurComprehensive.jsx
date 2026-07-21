@@ -451,8 +451,8 @@ Leveraging our expertise in app development, we built an interactive mobile app 
                 <div className={styles.authorInfo}>
                 <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Wade Warren" className={styles.avatar} />
                 <div className={styles.authorMeta}>
-                    <span className={styles.authorName}>Wade Warren</span>
-                    <span className={styles.authorRole}>Art Director</span>
+                    <span className={styles.authorName}>Dart Vaider</span>
+                    <span className={styles.authorRole}>Umny chelovec v ochkah</span>
                 </div>
                 </div>
                 <button className={styles.actionBtn} aria-label="Read more">↗</button>
@@ -471,8 +471,8 @@ Leveraging our expertise in app development, we built an interactive mobile app 
                 <div className={styles.authorInfo}>
                 <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Lisa Williams" className={styles.avatar} />
                 <div className={styles.authorMeta}>
-                    <span className={styles.authorName}>Lisa Williams</span>
-                    <span className={styles.authorRole}>CEO of HealthTech</span>
+                    <span className={styles.authorName}>Marshal Shudkov</span>
+                    <span className={styles.authorRole}>Glava soveckoy Arii</span>
                 </div>
                 </div>
                 <button className={styles.actionBtn} aria-label="Read more">↗</button>
