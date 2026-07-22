@@ -284,22 +284,22 @@ export default function MainPage() {
 {/*----------------------------------------- пробел ----------------------------------------- */}
 
 
-<section className={styles.Testimonials}>
+{/* <section className={styles.Testimonials}>
   <div className={styles.Testimonials_Container}>
     
     {/*  секции */}
-    <div className={styles.Testimonials_Header}>
+    {/* <div className={styles.Testimonials_Header}>
       <h2 className={styles.Testimonials_Title}>Testimonials</h2>
       <button className={styles.AllTestimonials_Btn}>
         <img src="src\assets\Container (9).png" alt="" />
       </button>
-    </div>
+    </div> */}
 
-    {/*  отзыв */}
+     {/* отзыв
     <div className={styles.Testimonials_Grid}>
       
       {/*  1 */}
-      <div className={styles.Card_Testimonial}>
+      {/* <div className={styles.Card_Testimonial}>
         <div className={styles.Card_Testimonial_Body}>
           <h3 className={styles.Card_Testimonial_Heading}>NEXGEN TURNED OUR BUSINESS AROUND!</h3>
           <p className={styles.Card_Testimonial_Txt}>
@@ -316,10 +316,10 @@ export default function MainPage() {
           </div>
           <button className={styles.Card_Testimonial_Btn}>↗</button>
         </div>
-      </div>
+      </div> */} *
 
       {/*  2 */}
-      <div className={styles.Card_Testimonial}>
+      {/* <div className={styles.Card_Testimonial}>
         <div className={styles.Card_Testimonial_Body}>
           <h3 className={styles.Card_Testimonial_Heading}>NEXGEN TURNED OUR BUSINESS AROUND!</h3>
           <p className={styles.Card_Testimonial_Txt}>
@@ -336,10 +336,10 @@ export default function MainPage() {
           </div>
           <button className={styles.Card_Testimonial_Btn}>↗</button>
         </div>
-      </div>
+      </div> */}
 
       {/*  3 */}
-      <div className={styles.Card_Testimonial}>
+      {/* <div className={styles.Card_Testimonial}>
         <div className={styles.Card_Testimonial_Body}>
           <h3 className={styles.Card_Testimonial_Heading}>WORKING WITH NEXGEN WAS A PLEASURE.</h3>
           <p className={styles.Card_Testimonial_Txt}>
@@ -356,10 +356,10 @@ export default function MainPage() {
           </div>
           <button className={styles.Card_Testimonial_Btn}>↗</button>
         </div>
-      </div>
+      </div> */}
 
       {/* Карточка 4 */}
-      <div className={styles.Card_Testimonial}>
+      {/* <div className={styles.Card_Testimonial}>
         <div className={styles.Card_Testimonial_Body}>
           <h3 className={styles.Card_Testimonial_Heading}>NEXGEN'S WEB DESIGN TEAM BROUGHT OUR VISION TO LIFE.</h3>
           <p className={styles.Card_Testimonial_Txt}>
@@ -380,7 +380,8 @@ export default function MainPage() {
 
     </div>
   </div>
-</section>
+</section> 
+*/} 
 
 {/*----------------------------------------- пробел ----------------------------------------- */}
                             <section className={styles.Space}></section>

@@ -7,6 +7,199 @@
     gap: 12px;
     justify-content: center;
     align-items: center;
+
+
+
+
+  .testimonialsSection {
+    width: 100%;
+    background-color: #000000; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .TESTIMONIALS{
+      width: 97%;
+
+      background-color:#000000;   
+      border-radius: 12px;
+
+      margin: 1px;
+      border: 2px solid #1f1f1F;
+
+
+
+      padding:30px 30px 30px 30px;
+      margin: 8px 0 8px 0;
+
+      .sectionHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #141414;
+        border-radius: 12px;
+
+        border: 30px solid transparent; 
+        box-sizing: border-box;
+        margin-bottom: 1%;
+
+        .sectionTitle {
+          color: #ffffff;
+          font-size: 28px;
+          font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .allLink {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: #cecbcb;
+          text-decoration: none;
+          font-size: 13px;
+          letter-spacing: 1px;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #ffffff;
+          }
+
+          .arrowIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border: 1px solid #262626;
+            border-radius: 50%;
+            color: #f3f3f3;
+          }
+        }
+      }
+
+      .testimonialsGrid {
+        display: grid;
+        // Автоматические 4 колонки, сжимающиеся на мобильных устройствах
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px; // Расстояние между карточками отзыва
+      }
+
+      .testimonialCard {
+        background-color: #141414;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        // Прозрачный толстый border заменяет padding карточки:
+        border: 30px solid transparent; 
+
+        .cardContent {
+          display: flex;
+          flex-direction: column;
+          gap: 16px; // Отступ между заголовком отзыва и основным текстом
+          
+          // Заставляем текстовый блок занять максимум места, прижав футер к низу
+          flex-grow: 1; 
+    
+          // Создаем визуальный отступ до футера с помощью нижней рамки
+          border-bottom: 30px solid transparent; 
+
+          .cardTitle {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+          }
+
+          .cardText {
+            color: #999999;
+            font-size: 13px;
+            line-height: 1.5;
+          }
+        }
+
+        .cardFooter {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #262626; 
+          border-top-width: 20px; 
+          border-top-color: transparent; 
+          box-sizing: border-box;
+          
+          // Повторно создаем саму линию через псевдоэлемент, так как border занят отступом
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #222222;
+          }
+
+          .authorInfo {
+            display: flex;
+            align-items: center;
+            gap: 12px; // Зазор между аватаркой и именем
+
+            .avatar {
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+              object-fit: cover;
+              background-color: #333; // Флбэк фон для картинки
+            }
+
+            .authorMeta {
+              display: flex;
+              flex-direction: column;
+              gap: 4px; // Расстояние между Именем и Должностью
+
+              .authorName {
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+              }
+
+              .authorRole {
+                color: #555555;
+                font-size: 12px;
+              }
+            }
+          }
+
+          .actionBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: #1c1c1c;
+            border: 1px solid #262626;
+            border-radius: 50%;
+            color: #666666;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease;
+
+            &:hover {
+              background-color: #262626;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .footerBody{
@@ -506,4 +699,8 @@ $text-dark-muted: #4C4C4C;
   }
 }
 
-
+.Space{
+    width: 100%;
+    height: 10vh;
+    background: #000;
+}

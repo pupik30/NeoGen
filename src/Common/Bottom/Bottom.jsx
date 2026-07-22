@@ -44,59 +44,165 @@ export default function Bottom() {
     }
   ];
 
-  return (
-    <>
-      <footer className={classes.footer}>
-        <div className={classes.footerBody}>
-          <div className={classes.faqHeader}>
-            <h2>FREQUENTLY ASKED QUESTIONS</h2>
-            <div className={classes.viewAll}>
-              <div className={classes.viewAllCircle}>↗</div>
-              <span>VIEW ALL</span>
-            </div>
-          </div>
+return (
+<>
+  <footer className={classes.footer}>
+    <div className={classes.footerBody}>
 
-          <div className={classes.faqContent}>
-            <div className={classes.faqLeft}>
-              {faqItems.map((item, index) => (
-                <div className={classes.faqCard} key={index}>
-                  <div
-                    className={classes.faqQuestion}
-                    onClick={() => setActiveFaq(activeFaq === index ? -1 : index)}
-                  >
-                    <p>{item.title}</p>
-                    <div className={classes.faqIcon}>
-                      {activeFaq === index ? "−" : "+"}
-                    </div>
-                  </div>
-                  {activeFaq === index && (
-                    <div className={classes.faqAnswer}>
-                      <p>{item.text}</p>
-                    </div>
-                  )}
+<div className={classes.testimonialsSection}>
+    <div className={classes.TESTIMONIALS}>
+        {/* Шапка секции */}
+        <div className={classes.sectionHeader}>
+            <h2 className={classes.sectionTitle}>TESTIMONIALS</h2>
+            <a href="#all" className={classes.allLink}>
+                <span className={classes.arrowIcon}>↗</span>
+                <span className={classes.linkText}>ALL TESTIMONIALS</span>
+            </a>
+        </div>
+
+        {/* Сетка отзывов */}
+        <div className={classes.testimonialsGrid}>
+            
+            {/* Карточка 1 */}
+            <article className={classes.testimonialCard}>
+                <div className={classes.cardContent}>
+                    <h3 className={classes.cardTitle}>NEXGEN TURNED OUR BUSINESS AROUND!</h3>
+                    <p className={classes.cardText}>
+                        Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                    </p>
                 </div>
-              ))}
-            </div>
+                <div className={classes.cardFooter}>
+                    <div className={classes.authorInfo}>
+                        <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Sarah Thompson" className={classes.avatar} />
+                        <div className={classes.authorMeta}>
+                            <span className={classes.authorName}>Sarah Thompson</span>
+                            <span className={classes.authorRole}>CEO of BlueBloom</span>
+                        </div>
+                    </div>
+                    <button className={classes.actionBtn} aria-label="Read more">↗</button>
+                </div>
+            </article>
 
-            <div className={classes.faqRight}>
-              <h3>ASK YOUR QUESTION</h3>
-              <div className={classes.inputGroup}>
-                <label>NAME</label>
-                <input type="text" placeholder="Enter your name" />
+            {/* Карточка 2 */}
+            <article className={classes.testimonialCard}>
+                <div className={classes.cardContent}>
+                    <h3 className={classes.cardTitle}>NEXGEN TURNED OUR BUSINESS AROUND!</h3>
+                    <p className={classes.cardText}>
+                        Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                    </p>
+                </div>
+                <div className={classes.cardFooter}>
+                    <div className={classes.authorInfo}>
+                        <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Wade Warren" className={classes.avatar} />
+                        <div className={classes.authorMeta}>
+                            <span className={classes.authorName}>Dart Vaider</span>
+                            <span className={classes.authorRole}>Umny chelovec v ochkah</span>
+                        </div>
+                    </div>
+                    <button className={classes.actionBtn} aria-label="Read more">↗</button>
+                </div>
+            </article>
+
+            {/* Карточка 3 */}
+            <article className={classes.testimonialCard}>
+                <div className={classes.cardContent}>
+                    <h3 className={classes.cardTitle}>WORKING WITH NEXGEN WAS A PLEASURE.</h3>
+                    <p className={classes.cardText}>
+                        Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.
+                    </p>
+                </div>
+                <div className={classes.cardFooter}>
+                    <div className={classes.authorInfo}>
+                        <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Lisa Williams" className={classes.avatar} />
+                        <div className={classes.authorMeta}>
+                            <span className={classes.authorName}>Marshal Shudkov</span>
+                            <span className={classes.authorRole}>Glava soveckoy Arii</span>
+                        </div>
+                    </div>
+                    <button className={classes.actionBtn} aria-label="Read more">↗</button>
+                </div>
+            </article>
+
+            {/* Карточка 4 */}
+            <article className={classes.testimonialCard}>
+                <div className={classes.cardContent}>
+                    <h3 className={classes.cardTitle}>NEXGEN'S WEB DESIGN TEAM BROUGHT OUR VISION TO LIFE.</h3>
+                    <p className={classes.cardText}>
+                        Their responsive design ensures our website looks stunning on all devices, contributing to increased user engagement.
+                    </p>
+                </div>
+                <div className={classes.cardFooter}>
+                    <div className={classes.authorInfo}>
+                        <img src="src\assets\file_0000000068b881f4b691cc348a06a467.png" alt="Jennifer Lee" className={classes.avatar} />
+                        <div className={classes.authorMeta}>
+                            <span className={classes.authorName}>Jennifer Lee</span>
+                            <span className={classes.authorRole}>COO of Foodie Haven</span>
+                        </div>
+                    </div>
+                    <button className={classes.actionBtn} aria-label="Read more">↗</button>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+    {/*----------------------------------------- пробел ----------------------------------------- */}
+    <section className={classes.Space}></section>
+    {/*----------------------------------------- пробел ----------------------------------------- */}
+
+
+
+
+
+      <div className={classes.faqHeader}>
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <div className={classes.viewAll}>
+          <div className={classes.viewAllCircle}>↗</div>
+          <span>VIEW ALL</span>
+        </div>
+      </div>
+
+      <div className={classes.faqContent}>
+        <div className={classes.faqLeft}>
+          {faqItems.map((item, index) => (
+            <div className={classes.faqCard} key={index}>
+              <div
+                className={classes.faqQuestion}
+                onClick={() => setActiveFaq(activeFaq === index ? -1 : index)}
+              >
+                <p>{item.title}</p>
+                <div className={classes.faqIcon}>
+                  {activeFaq === index ? "−" : "+"}
+                </div>
               </div>
-              <div className={classes.inputGroup}>
-                <label>EMAIL</label>
-                <input type="email" placeholder="Enter your email" />
-              </div>
-              <div className={classes.inputGroup}>
-                <label>YOUR QUESTION</label>
-                <textarea placeholder="Enter Your Question Here ....." />
-              </div>
-              <button className={classes.sendBtn}>
-                SEND YOUR MESSAGE
-              </button>
+              {activeFaq === index && (
+                <div className={classes.faqAnswer}>
+                  <p>{item.text}</p>
+                </div>
+              )}
             </div>
+          ))}
+        </div>
+
+        <div className={classes.faqRight}>
+          <h3>ASK YOUR QUESTION</h3>
+          <div className={classes.inputGroup}>
+            <label>NAME</label>
+            <input type="text" placeholder="Enter your name" />
           </div>
+          <div className={classes.inputGroup}>
+            <label>EMAIL</label>
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div className={classes.inputGroup}>
+            <label>YOUR QUESTION</label>
+            <textarea placeholder="Enter Your Question Here ....." />
+          </div>
+          <button className={classes.sendBtn}>
+            SEND YOUR MESSAGE
+          </button>
+        </div>
+      </div>
 
         <div className={classes.referensBody}>
             <div className={classes.HeaderTransformBody}>
@@ -218,6 +324,8 @@ export default function Bottom() {
                 </div>
             </div>
         </div>{/* Нижний фут конец*/}
+
+        
       </footer>
     </>
   );
