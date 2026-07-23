@@ -188,8 +188,11 @@ export default function MainPage() {
                             <section className={styles.Space}></section>
 {/*----------------------------------------- пробел ----------------------------------------- */}
 <section className={styles.OurWorks}>
-    <div className={styles.OurWorksBlock}><div className={styles.OurWorksBlockTxt}><p className={styles.InfoBlockTextP}>OUR WORKS</p><img src="src\assets\Container (6).png" alt="" /></div></div>
-
+    <div className={styles.OurWorksBlock}>
+        <div className={styles.OurWorksBlockTxt}>
+            <p className={styles.InfoBlockTextP}>OUR WORKS</p>
+        </div>
+    </div>
     <div className={styles.BorderMenu}>
                 <div className={styles.Card_OurWork_One}>
             <div className={styles.Div_Card}>
@@ -210,7 +213,7 @@ export default function MainPage() {
         <div className={styles.Card_OurWork_Two}><img src="src\assets\OurWorkImgOne.png" alt="" /></div>
         <div className={styles.Card_OurWork_Tri}>
             <div className={styles.Card_OurWork_Tri_Up}><div className={styles.Div_Card}>
-                <p className={styles.WhiteTxt}>Technologies Used</p>
+                <p className={styles.WhiteTxt}>TECHNOLOGIES USED</p>
                 <div className={styles.Card_OurWork_Teg}>
                     <div className={styles.Div_Card_Center_Oval}>React Native</div>
                     <div className={styles.Div_Card_Center_Oval}>Firebase</div>
@@ -219,7 +222,7 @@ export default function MainPage() {
                     <div className={styles.Div_Card_Center_Oval}>MongoDB</div>
                 </div>  
             </div></div>
-            <div className={styles.Card_OurWork_Tri_Center}><p className={styles.WhiteTxt}>Team Members</p>
+            <div className={styles.Card_OurWork_Tri_Center}><p className={styles.WhiteTxt}>TEAM MEMBERS</p>
                 <div className={styles.ConteinerRow}>
                     <img src="src\assets\Image (2).png" alt="" />
                     <img src="src\assets\Image (3).png" alt="" />
@@ -255,7 +258,7 @@ export default function MainPage() {
     <div className={styles.Card_OurWork_Two}><img src="src\assets\Image (9).png" alt="" /></div>
         <div className={styles.Card_OurWork_Tri}>
             <div className={styles.Card_OurWork_Tri_Up}><div className={styles.Div_Card}>
-                <p className={styles.WhiteTxt}>Technologies Used</p>
+                <p className={styles.WhiteTxt}>TECHNOLOGIES USED</p>
                 <div className={styles.Card_OurWork_Teg}>
                     <div className={styles.Div_Card_Center_Oval}>WordPress</div>
                     <div className={styles.Div_Card_Center_Oval}>PHP</div>
@@ -264,7 +267,7 @@ export default function MainPage() {
                     <div className={styles.Div_Card_Center_Oval}>JavaScript</div>
                 </div>  
             </div></div>
-            <div className={styles.Card_OurWork_Tri_Center}><p className={styles.WhiteTxt}>Team Members</p>
+            <div className={styles.Card_OurWork_Tri_Center}><p className={styles.WhiteTxt}>TEAM MEMBERS</p>
                 <div className={styles.ConteinerRow}>
                     <img src="src\assets\Image (2).png" alt="" />
                     <img src="src\assets\Image (3).png" alt="" />
