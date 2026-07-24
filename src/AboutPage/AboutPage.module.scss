@@ -1,0 +1,433 @@
+
+$color-bg-card: #141414;
+
+$color-text-white: #ffffff;
+
+$color-accent: #e58d73;
+$font-main: 'Inter', sans-serif;
+$team-color-bg-main: #000000;
+
+$team-color-bg-photo: #e5a999; 
+
+$team-font-main: 'Inter', sans-serif;
+
+.headerBlockBot {
+  background-color: #000000;
+
+  font-family: $font-main;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+   
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+// Левая главная панель
+.main {
+  width: 60%;
+  background-color: $color-bg-card;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0  20px 0;
+  // padding:  0 0 0 5%   ;
+  flex-direction: row;
+  align-items: center;
+  img{
+
+    margin-bottom: 6%;
+    flex-shrink: 0;
+  }
+}
+
+.title {
+  color: $color-text-white;
+  font-size: clamp(2rem, 4vw, 2.8rem); // Плавно уменьшается на мелких экранах
+  font-weight: 700;
+line-height: 150%;
+  margin-right: 2%;
+}
+
+// Контейнер под вашу картинку/иконку "Start a project"
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &Icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Text {
+    color: $color-accent;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+}
+
+// Правая панель
+.side {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0  20px 0;
+  background-color: $color-bg-card; 
+  border-radius: 12px;
+  width: 38%;
+}
+
+// Сетка карточек с авто-расчетом колонок
+.grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr); 
+  margin: 25px 25px 0 25px;
+  height: 23vh;
+}
+
+// Сами карточки с цифрами
+.card {
+  background: #1F1F1F;
+  border-radius: 12px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+padding: 15px;
+
+  &Label {
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  &Value {
+    color: $color-accent;
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-weight: 700;
+  }
+}
+
+// Ссылка "Know more" снизу
+.more {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(3px);
+  }
+
+  &Icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Text {
+    color: $color-text-white;
+    margin: 20px;
+  }
+}
+
+.Space{
+    width: 100%;
+    height: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.teamSection {
+  background-color: $team-color-bg-main;
+
+  font-family: $team-font-main;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.teamContainer {
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+// Верхний блок с главным текстом секции
+.teamHeader {
+  background-color: #141414;
+  border: 1px solid rgba(#0c0c0c, 0.15);
+  border-radius: 12px;
+  padding: 35px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.teamTitle {
+  color: #F9EFEC;
+  font-size: clamp(1.3rem, 3.5vw, 2rem); 
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-transform: uppercase;
+  flex: 1 1 400px;
+}
+
+.teamAllMembersLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.teamAllMembersIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamAllMembersText {
+  color: #F9EFEC;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+// Контейнер сетки для карточек
+.teamGrid {
+  display: grid;
+  // Сетка автоматически перестраивается без медиа-запросов
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+// Карточка члена команды
+.teamCard {
+  background-color: #141414;
+  border: 1px solid rgba(#070707, 0.15);
+  border-radius: 12px;
+  padding: 35px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.teamCardInfo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.teamCardName {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.02em;
+}
+
+.teamCardRole {
+  color: #999999;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.teamImageContainer {
+  width: 100%;
+  aspect-ratio: 5 / 3; 
+  background-color: $team-color-bg-photo;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Сажает обе картинки на нижний край */
+  margin-bottom: 25px;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center bottom; /* Прижимает девушку к низу */
+    filter: grayscale(100%);
+    
+    // Ищем вторую карточку или картинку с конкретным классом/модификатором
+    // Например, если у вас это список, можно использовать :nth-child(2) 
+    // или добавить класс вроде &.is-male или .right-avatar
+    &:nth-of-type(1), 
+    &.right-avatar { 
+      width: 100%; /* Уменьшаем ширину, чтобы уменьшить масштаб мужчины */
+      height: 90%; /* Уменьшаем высоту пропорционально девушке */
+      object-fit: contain; /* Меняем на contain, чтобы голова не обрезалась сверху */
+    }
+  }
+}
+
+
+
+
+// Контейнер плашек социальных сетей
+.teamSocials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.teamSocialLink {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+
+
+  img, svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+
+
+// Our Achievements
+
+
+
+
+
+
+.achieveSection {
+  background-color: #000000;
+
+  font-family:  'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.achieveContainer {
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achieveHeader {
+  background-color: #141414;
+  border: 1px solid rgba(#666666, 0.15);
+  border-radius: 12px;
+  padding: 35px 40px;
+  box-sizing: border-box;
+}
+
+.achieveMainTitle {
+  color: #ffffff;
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+
+
+  text-transform: uppercase;
+}
+
+.achieveGrid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.achieveCard {
+  background-color: #141414;
+  border: 1px solid rgba(#666666, 0.15);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.achieveDate {
+  color: #666666;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.achieveTitle {
+  color: #F9EFEC;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  min-height: 48px; 
+}
+
+.achieveText {
+  color: #999999;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+}

@@ -37,9 +37,6 @@ header{
                 display: flex;
                 justify-content: space-between; 
                 align-items: center;
-
-
-               
                 a{
                     text-decoration: none;
                     text-transform: uppercase;
@@ -67,6 +64,17 @@ header{
                     height: 6vh;
                     border: none;
                     border-radius: 12px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    
+                }
+                .ConectUs:hover{
+                    background-color: #f89a7b;
+                    width: 13vh;
+                    height: 6vh;
+                    border: none;
+                    border-radius: 12px;
+                    cursor: pointer;
                 }
             }
             
