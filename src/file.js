@@ -4,7 +4,6 @@
 
 
 
-
 export let Photo = {
 
 }
