@@ -190,41 +190,55 @@ return(
           
           {/* Ка 1 */}
           <div className={styles.achieveCard}>
-            <span className={styles.achieveDate}>September 2023</span>
-            <h3 className={styles.achieveTitle}>GLOBAL RECOGNITION FOR INNOVATION</h3>
-            <p className={styles.achieveText}>
-              In 2023, our digital agency gained global acclaim for innovative solutions, 
-              setting new standards in the ever-evolving digital landscape.
-            </p>
+            <div className={styles.achieveCardGde}>
+              <span className={styles.achieveDate}>September 2023</span>
+              <div className={styles.achieveTitleGde}>
+                <h3 className={styles.achieveTitle}>GLOBAL RECOGNITION FOR INNOVATION</h3>
+              </div>
+              <p className={styles.achieveText}>
+                In 2023, our digital agency gained global acclaim for innovative solutions, 
+                setting new standards in the ever-evolving digital landscape.
+              </p>
+            </div>
           </div>
 
           {/*  2 */}
           <div className={styles.achieveCard}>
-            <span className={styles.achieveDate}>March 2019</span>
-            <h3 className={styles.achieveTitle}>INDUSTRY LEADERSHIP ACKNOWLEDGED</h3>
-            <p className={styles.achieveText}>
-              Recognized as an industry leader in 2019, our agency received prestigious awards, 
-              affirming our commitment to excellence and client satisfaction.
-            </p>
+            <div className={styles.achieveCardGde}>
+              <span className={styles.achieveDate}>March 2019</span>
+              <div className={styles.achieveTitleGde}>
+                <h3 className={styles.achieveTitle}>Industry Leadership Acknowledged</h3>
+              </div>
+              <p className={styles.achieveText}>
+                Recognized as an industry leader in 2019, our agency received prestigious awards, affirming our commitment to excellence and client satisfaction.
+              </p>
+            </div>
           </div>
 
           {/* 3 */}
           <div className={styles.achieveCard}>
-            <span className={styles.achieveDate}>August 2015</span>
-            <h3 className={styles.achieveTitle}>EXPANSION INTO INTERNATIONAL MARKETS</h3>
-            <p className={styles.achieveText}>
-              Expanding horizons in 2015, our agency successfully entered international markets, 
-              establishing a global presence and serving clients on a broader scale.
-            </p>
+            <div className={styles.achieveCardGde}>
+              <span className={styles.achieveDate}>August 2015</span>
+              <div className={styles.achieveTitleGde}>
+                <h3 className={styles.achieveTitle}>Expansion into International Markets</h3>
+              </div>
+              <p className={styles.achieveText}>
+                Expanding horizons in 2015, our agency successfully entered international markets, establishing a global presence and serving clients on a broader scale.
+              </p>
+            </div>
           </div>
 
           {/* 444 */}
           <div className={styles.achieveCard}>
-            <span className={styles.achieveDate}>January 2010</span>
-            <h3 className={styles.achieveTitle}>PIONEERING THE DIGITAL FRONTIER</h3>
-            <p className={styles.achieveText}>
-              In 2010, our agency was born, pioneering the digital frontier and establishing  core principles that have guided us through a decade of innovation.
-            </p>
+            <div className={styles.achieveCardGde}>
+              <span className={styles.achieveDate}>January 2010</span>
+              <div className={styles.achieveTitleGde}>
+                <h3 className={styles.achieveTitle}>Pioneering the Digital Frontier</h3>
+              </div>
+              <p className={styles.achieveText}>
+               In 2010, our agency was born, pioneering the digital frontier and establishing core principles that have guided us through a decade of innovation.
+              </p>
+            </div>
           </div>
 
         </div>
