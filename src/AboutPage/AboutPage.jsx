@@ -250,6 +250,86 @@ return(
                             <section className={styles.Space}></section>
 {/*----------------------------------------- пробел ----------------------------------------- */}
 
+
+<section className={styles.testimonialsSection}>
+    <div className={styles.TESTIMONIALS}>
+
+        <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>AWARDS & RECOGNITIONS</h2>
+        </div>
+
+        {/* Сетка отзывов */}
+        <div className={styles.testimonialsGrid}>
+            
+            {/* Карточка 1 */}
+            <article className={styles.testimonialCard}>
+                <div className={styles.testimonialCardImg}>
+                    <div className={styles.DateBlock}>
+                      <p className={styles.DATEtxt}>Date</p>
+                      <img src="src\assets\Shape.png" alt="" />
+                      <p className={styles.DATEtime}>October 2017</p>
+                    </div>   
+                <img src="src\assets\GuardIcon.png" alt="Sarah Thompson" className={styles.avatar} />
+                </div>
+                <div className={styles.CardtxtConteiner}>
+                    <p className={styles.TextTop}>DIGITAL EXCELLENCE AWARD</p>
+                    <p className={styles.TextBot}>Recognition for outstanding contributions to the digital industry, celebrating our ability to deliver exceptional web design and development solutions that push the boundaries of creativity and functionality.</p>
+                </div>
+            </article>
+
+            {/* Карточка 2 */}
+            <article className={styles.testimonialCard}>
+                <div className={styles.testimonialCardImg}>
+                    <div className={styles.DateBlock}>
+                      <p className={styles.DATEtxt}>Date</p>
+                      <img src="src\assets\Shape.png" alt="" />
+                      <p className={styles.DATEtime}>March 2019</p>
+                    </div>   
+                <img src="src\assets\GuardIcon.png" alt="Sarah Thompson" className={styles.avatar} />
+                </div>
+                <div className={styles.CardtxtConteiner}>
+                    <p className={styles.TextTop}>TOP MOBILE APP DEVELOPMENT AGENCY</p>
+                    <p className={styles.TextBot}>Recognized as a top mobile app development agency by industry experts, highlighting our proficiency in delivering seamless and user-centric mobile applications.</p>
+                </div>
+            </article>
+
+            {/* Карточка 3 */}
+            <article className={styles.testimonialCard}>
+                <div className={styles.testimonialCardImg}>
+                    <div className={styles.DateBlock}>
+                      <p className={styles.DATEtxt}>Date</p>
+                      <img src="src\assets\Shape.png" alt="" />
+                      <p className={styles.DATEtime}>July 2022</p>
+                    </div>   
+                <img src="src\assets\GuardIcon.png" alt="Sarah Thompson" className={styles.avatar} />
+                </div>
+                <div className={styles.CardtxtConteiner}>
+                    <p className={styles.TextTop}>BEST DIGITAL MARKETING CAMPAIGN</p>
+                    <p className={styles.TextBot}>Awarded for an exceptional digital marketing campaign with outstanding results, showcasing our data-driven strategies and targeted marketing efforts that achieved remarkable business growth for our clients.</p>
+                </div>
+            </article>
+
+            {/* Карточка 4 */}
+            <article className={styles.testimonialCard}>
+                <div className={styles.testimonialCardImg}>
+                    <div className={styles.DateBlock}>
+                      <p className={styles.DATEtxt}>Date</p>
+                      <img src="src\assets\Shape.png" alt="" />
+                      <p className={styles.DATEtime}>November 2024</p>
+                    </div>   
+                <img src="src\assets\GuardIcon.png" alt="Sarah Thompson" className={styles.avatar} />
+                </div>
+                <div className={styles.CardtxtConteiner}>
+                    <p className={styles.TextTop}>INNOVATIVE TECH STARTUP AWARD</p>
+                    <p className={styles.TextBot}>Recognition of our pioneering efforts as a technology startup, acknowledging our commitment to exploring and implementing cutting-edge technologies to drive innovation in the digital space.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
 </>
 )
 }
