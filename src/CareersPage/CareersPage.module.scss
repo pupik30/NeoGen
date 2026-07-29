@@ -1,0 +1,120 @@
+
+$color-bg-card: #141414;
+$color-text-white: #ffffff;
+$color-accent: #e58d73;
+$font-main: 'Inter', sans-serif;
+$team-color-bg-main: #000000;
+$team-color-bg-photo: #e5a999; 
+$team-font-main: 'Inter', sans-serif;
+
+.headerBlockBot {
+  background-color: #000000;
+
+  font-family: $font-main;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+   
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+
+.main {
+  width: 60%;
+  height: 30vh;
+  background-color: $color-bg-card;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0  0 0;
+  // padding:  0 0 0 5%   ;
+  flex-direction: row;
+  align-items: center;
+  img{
+
+    margin-bottom: 6%;
+    flex-shrink: 0;
+  }
+}
+
+.title {
+  color: $color-text-white;
+  font-size: clamp(2rem, 4vw, 2.8rem); 
+  font-weight: 700;
+line-height: 150%;
+  margin-right: 2%;
+  text-transform: uppercase;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &Icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Text {
+    color: $color-accent;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0  0 0;
+  background-color: $color-bg-card; 
+  border-radius: 12px;
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sidegde{
+    width: 80%;
+    height: 70%;
+    color: #B3B3B2;
+    display: flex;
+      justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  }
+}
+
+.more {
+  align-self: start; 
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+    color: white;
+
+}
+.Space{
+    width: 100%;
+    height: 10vh;
+}

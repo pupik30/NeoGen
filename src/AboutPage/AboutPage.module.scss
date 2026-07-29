@@ -1,14 +1,10 @@
 
 $color-bg-card: #141414;
-
 $color-text-white: #ffffff;
-
 $color-accent: #e58d73;
 $font-main: 'Inter', sans-serif;
 $team-color-bg-main: #000000;
-
 $team-color-bg-photo: #e5a999; 
-
 $team-font-main: 'Inter', sans-serif;
 
 .headerBlockBot {
@@ -29,7 +25,7 @@ $team-font-main: 'Inter', sans-serif;
   justify-content: space-between;
 }
 
-// Левая главная панель
+
 .main {
   width: 60%;
   background-color: $color-bg-card;
@@ -52,13 +48,12 @@ $team-font-main: 'Inter', sans-serif;
 
 .title {
   color: $color-text-white;
-  font-size: clamp(2rem, 4vw, 2.8rem); // Плавно уменьшается на мелких экранах
+  font-size: clamp(2rem, 4vw, 2.8rem); 
   font-weight: 700;
 line-height: 150%;
   margin-right: 2%;
 }
 
-// Контейнер под вашу картинку/иконку "Start a project"
 .cta {
   display: inline-flex;
   align-items: center;
@@ -86,7 +81,6 @@ line-height: 150%;
   }
 }
 
-// Правая панель
 .side {
   display: flex;
   flex-direction: column;
@@ -96,7 +90,6 @@ line-height: 150%;
   width: 38%;
 }
 
-// Сетка карточек с авто-расчетом колонок
 .grid {
   display: grid;
   gap: 15px;
@@ -105,7 +98,6 @@ line-height: 150%;
   height: 23vh;
 }
 
-// Сами карточки с цифрами
 .card {
   background: #1F1F1F;
   border-radius: 12px;
@@ -131,7 +123,7 @@ padding: 15px;
   }
 }
 
-// Ссылка "Know more" снизу
+
 .more {
   align-self: center;
   display: inline-flex;

@@ -11,7 +11,7 @@ return(
 <section className={styles.headerBlockBot}>
   <div className={styles.container}>
     
-    {/* Левый блок: Заголовок и кнопка */}
+    {/* Левый блок*/}
     <div className={styles.main}>
       <h1 className={styles.title}>
         ELEVATING BRANDS <br /> IN THE DIGITAL AGE
@@ -82,7 +82,8 @@ return(
               <p className={styles.teamCardRole}>Co-Founder & CEO</p>
             </div>
             <div className={styles.teamImageContainer}>
-              <img src="src\assets\87fae8960d3aa4b1cf615ab5d9c08c511d80086c.png" alt="" />
+              <img src="src\assets\87fae8960d3aa4b1cf615ab5d9c08c511d80086c.png"
+               alt="" />
             </div>
 <div className={styles.teamSocials}>
   <a href="#" className={styles.teamSocialLink}>
@@ -327,9 +328,6 @@ return(
         </div>
     </div>
 </section>
-
-
-
 </>
 )
 }
