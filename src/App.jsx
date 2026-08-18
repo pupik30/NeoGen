@@ -14,6 +14,7 @@ import OurComprehensive from './OurComprehensive/OurComprehensive.jsx'
 import ProjectPage from './ProjectPage/ProjectPage.jsx'
 import AboutPage from './AboutPage/AboutPage.jsx'
 import CareersPage from './CareersPage/CareersPage.jsx'
+import BlogsPage from './BlogsPage/BlogsPage.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
                 <Route path='ProjectPage' element={<ProjectPage/>}/>
                 <Route path='AboutPage' element={<AboutPage/>}/>
                 <Route path='CareersPage' element={<CareersPage/>}/>
+                <Route path='BlogsPage' element={<BlogsPage/>}/>
             </Routes>  
           <Bottom />
         </BrowserRouter>
