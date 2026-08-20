@@ -452,15 +452,4 @@ height: 20%;
   font-size: 1.1rem;
 }
 
-/* Адаптивность для планшетов и мобильных устройств */
-@media (max-width: 1024px) {
-  .applyGrid {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
-  }
-}
 
-@media (max-width: 600px) {
-  .applyGrid {
-    grid-template-columns: 1fr; /* 1 колонка на мобильных телефонах */
-  }
-}

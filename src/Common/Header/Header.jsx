@@ -16,7 +16,7 @@ export default function Header() {
                                <NavLink to={'ProjectPage'} className={({isActive}) => (isActive ? `${styles.active} ${styles.active}`: "")}>Pojects</NavLink>
                                <NavLink to={'AboutPage'} className={({isActive}) => (isActive ? `${styles.active} ${styles.active}`: "")}>About</NavLink>
                                <NavLink to={'CareersPage'} className={({isActive}) => (isActive ? `${styles.active} ${styles.active}`: "")}>Careers</NavLink>
-                               <NavLink to={'/'} className={({isActive}) => (isActive ? `${styles.active} ${styles.active}`: "")}>Blogs</NavLink>
+                               <NavLink to={'BlogsPage'} className={({isActive}) => (isActive ? `${styles.active} ${styles.active}`: "")}>Blogs</NavLink>
                            <button className={styles.ConectUs}>Contact Ass</button>
                        </nav> 
                    </div>
