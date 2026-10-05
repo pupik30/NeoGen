@@ -1,0 +1,662 @@
+
+$color-bg-card: #141414;
+$color-text-white: #ffffff;
+$color-accent: #e58d73;
+$font-main: 'Inter', sans-serif;
+$team-color-bg-main: #000000;
+$team-color-bg-photo: #e5a999; 
+$team-font-main: 'Inter', sans-serif;
+
+.headerBlockBot {
+  background-color: #000000;
+
+  font-family: $font-main;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+   
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+
+.main {
+  width: 60%;
+  background-color: $color-bg-card;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0  20px 0;
+  // padding:  0 0 0 5%   ;
+  flex-direction: row;
+  align-items: center;
+  img{
+
+    margin-bottom: 6%;
+    flex-shrink: 0;
+  }
+}
+
+.title {
+  color: $color-text-white;
+  font-size: clamp(2rem, 4vw, 2.8rem); 
+  font-weight: 700;
+line-height: 150%;
+  margin-right: 2%;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &Icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Text {
+    color: $color-accent;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0  20px 0;
+  background-color: $color-bg-card; 
+  border-radius: 12px;
+  width: 38%;
+}
+
+.grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr); 
+  margin: 25px 25px 0 25px;
+  height: 23vh;
+}
+
+.card {
+  background: #1F1F1F;
+  border-radius: 12px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+padding: 15px;
+
+  &Label {
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  &Value {
+    color: $color-accent;
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-weight: 700;
+  }
+}
+
+
+.more {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(3px);
+  }
+
+  &Icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Text {
+    color: $color-text-white;
+    margin: 20px;
+  }
+}
+
+.Space{
+    width: 100%;
+    height: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.teamSection {
+  background-color: $team-color-bg-main;
+
+  font-family: $team-font-main;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.teamContainer {
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+// Верхний блок с главным текстом секции
+.teamHeader {
+  background-color: #141414;
+  border: 1px solid rgba(#0c0c0c, 0.15);
+  border-radius: 12px;
+  padding: 35px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.teamTitle {
+  color: #F9EFEC;
+  font-size: clamp(1.3rem, 3.5vw, 2rem); 
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-transform: uppercase;
+  flex: 1 1 400px;
+}
+
+.teamAllMembersLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.teamAllMembersIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamAllMembersText {
+  color: #F9EFEC;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+// Контейнер сетки для карточек
+.teamGrid {
+  display: grid;
+  // Сетка автоматически перестраивается без медиа-запросов
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+// Карточка члена команды
+.teamCard {
+  background-color: #141414;
+  border: 1px solid rgba(#070707, 0.15);
+  border-radius: 12px;
+  padding: 35px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.teamCardInfo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.teamCardName {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.02em;
+}
+
+.teamCardRole {
+  color: #999999;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.teamImageContainer {
+  width: 100%;
+  aspect-ratio: 5 / 3; 
+  background-color: $team-color-bg-photo;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Сажает обе картинки на нижний край */
+  margin-bottom: 25px;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center bottom; /* Прижимает девушку к низу */
+    filter: grayscale(100%);
+    
+    // Ищем вторую карточку или картинку с конкретным классом/модификатором
+    // Например, если у вас это список, можно использовать :nth-child(2) 
+    // или добавить класс вроде &.is-male или .right-avatar
+    &:nth-of-type(1), 
+    &.right-avatar { 
+      width: 100%; /* Уменьшаем ширину, чтобы уменьшить масштаб мужчины */
+      height: 90%; /* Уменьшаем высоту пропорционально девушке */
+      object-fit: contain; /* Меняем на contain, чтобы голова не обрезалась сверху */
+    }
+  }
+}
+
+
+
+
+// Контейнер плашек социальных сетей
+.teamSocials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.teamSocialLink {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+
+
+  img, svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+
+
+// Our Achievements
+
+
+
+
+
+
+.achieveSection {
+  background-color: #000000;
+
+  font-family:  'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.achieveContainer {
+  width: 95%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achieveHeader {
+  background-color: #141414;
+  border: 1px solid rgba(#666666, 0.15);
+  border-radius: 12px;
+  padding: 35px 40px;
+  box-sizing: border-box;
+}
+
+.achieveMainTitle {
+  color: #ffffff;
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+
+
+  text-transform: uppercase;
+}
+
+.achieveGrid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.achieveCard {
+  height: 25vh;
+  background-color: #141414;
+  border: 1px solid rgba(#666666, 0.15);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  .achieveCardGde{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+  }
+}
+
+.achieveDate {
+  color: #666666;
+  font-size: 0.8rem;
+  font-weight: 500;
+  height: 12%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.achieveTitleGde{
+    height: 53%;
+    width: 100%;
+    color: #F9EFEC;
+    background: #1F1F1F;
+    border-color: #262626;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    min-height: 48px; 
+  .achieveTitle {
+    width: 80%;
+  }
+}
+
+
+.achieveText {
+  color: #999999;
+  font-size: 0.85rem;
+  line-height: 150%;
+  margin: 0;
+  width: 80%;
+  height: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+//sddddddddfffffffffffffffffffffffffddddddddddddddddddddddrrrrrrrrrrrrrrrrrr
+.testimonialsSection {
+  width: 100%;
+  background-color: #000000; 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .TESTIMONIALS{
+    width: 92%;
+
+    background-color:#000000;   
+    border-radius: 12px;
+
+    margin: 1px;
+    border: 2px solid #1f1f1F;
+
+
+
+    padding:30px 30px 30px 30px;
+    margin: 8px 0 8px 0;
+
+    .sectionHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #141414;
+      border-radius: 12px;
+
+      border: 30px solid transparent; 
+      box-sizing: border-box;
+      margin-bottom: 1%;
+
+      .sectionTitle {
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 600;
+          letter-spacing: 1px;
+      }
+
+      .allLink {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #cecbcb;
+        text-decoration: none;
+        font-size: 13px;
+        letter-spacing: 1px;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #ffffff;
+        }
+
+        .arrowIcon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border: 1px solid #262626;
+          border-radius: 50%;
+          color: #f3f3f3;
+        }
+      }
+    }
+
+      .testimonialsGrid {
+        display: grid;
+        // Автоматические 4 колонки, сжимающиеся на мобильных устройствах
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px; // Расстояние между карточками отзыва
+      }
+
+      .testimonialCard {
+        background-color: #141414;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+
+        box-sizing: border-box;
+        // Прозрачный толстый border заменяет padding карточки:
+        border: 30px solid transparent;
+        .testimonialCardImg{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #B3B3B2;
+          margin-bottom: 4%;
+
+          .DateBlock{
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #262626;
+            padding: 15px;
+            border-radius: 45px;
+            .DATEtime{
+              color: #E6E6E6;
+            }
+          }
+
+        } 
+        .CardtxtConteiner{
+            width: 100%;
+
+            .TextTop{
+                color: #B3B3B2;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 150%;
+                margin-bottom: 1% ;
+            }
+            .TextBot{
+                color: #B3B3B2;
+                font-weight: 200;
+                font-size: 18px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .cardFooter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #262626; 
+      border-top-width: 20px; 
+      border-top-color: transparent; 
+      box-sizing: border-box;
+      
+      // Повторно создаем саму линию через псевдоэлемент, так как border занят отступом
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #222222;
+      }
+
+      .authorInfo {
+        display: flex;
+        align-items: center;
+        gap: 12px; // Зазор между аватаркой и именем
+
+        .avatar {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          object-fit: cover;
+          background-color: #333; // Флбэк фон для картинки
+        }
+
+      .authorMeta {
+        display: flex;
+        flex-direction: column;
+        gap: 4px; // Расстояние между Именем и Должностью
+
+        .authorName {
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .authorRole {
+          color: #555555;
+          font-size: 12px;
+          }
+        }
+      }
+
+      .actionBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: #1c1c1c;
+        border: 1px solid #262626;
+        border-radius: 50%;
+        color: #666666;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: #262626;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

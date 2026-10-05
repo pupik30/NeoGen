@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+$color-card: #1A1A1A;
+$color-row: #1F1F1F;
+$color-text: #B3B3B2;
+$color-muted: #81807E;
+$color-title: #F9EFEC;
+
+.PostMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+
+    .PostTop{
+        width: 95%;
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+
+        .PostTitleCard{
+            flex: 2;
+            min-height: 365px;
+            background: $color-card;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            box-sizing: border-box;
+            .PostTitle{
+                color: $color-title;
+                font-size: 56px;
+                font-weight: 600;
+                line-height: 1.55;
+                text-transform: uppercase;
+            }
+            .StartBtn{
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                align-self: flex-start;
+                margin: 100px 0 0 14px;
+                img{
+                    width: 200px;
+                }
+            }
+        }
+
+        .PostMetaCard{
+            flex: 1;
+            background: $color-card;
+            border-radius: 14px;
+            padding: 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .MetaRow{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: $color-row;
+                border-radius: 12px;
+                padding: 0 30px;
+                .MetaLabel{
+                    font-family: "Roboto Mono", monospace;
+                    font-size: 12px;
+                    color: $color-muted;
+                }
+                .MetaValue{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $color-title;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .PostCover{
+        width: 95%;
+        aspect-ratio: 911 / 301;
+        margin-bottom: 30px;
+        border-radius: 14px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .PostBody{
+        width: 95%;
+        box-sizing: border-box;
+        padding-left: 8%;
+        display: grid;
+        grid-template-columns: 48px 1fr 26%;
+        column-gap: 15px;
+        align-items: start;
+
+        .Socials{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            .SocialBtn{
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $color-card;
+                border-radius: 12px;
+            }
+        }
+
+        .Article{
+            background: $color-card;
+            border-radius: 14px;
+            padding: 35px 38px 15px;
+            .ArticleHeading{
+                color: $color-title;
+                font-size: 24px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+            .ArticleText{
+                color: $color-text;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 1.65;
+                padding-left: 38px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .Sidebar{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .AuthorCard{
+                background: $color-card;
+                border-radius: 14px;
+                padding: 30px;
+                .AuthorHead{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    margin-bottom: 20px;
+                    .AuthorAvatar{
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                    .AuthorName{
+                        color: $color-title;
+                        font-size: 15px;
+                    }
+                    .AuthorRole{
+                        color: $color-muted;
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                }
+                .AuthorBio{
+                    color: $color-text;
+                    font-size: 13px;
+                    font-weight: 300;
+                    line-height: 1.6;
+                    margin-bottom: 25px;
+                }
+                .AuthorLink{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 48px;
+                    padding: 0 16px;
+                    background: $color-row;
+                    border-radius: 12px;
+                    color: $color-text;
+                    font-family: "Roboto Mono", monospace;
+                    font-size: 13px;
+                    text-decoration: none;
+                    .AuthorLinkLeft{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+            }
+
+            .StatsCard{
+                background: $color-card;
+                border-radius: 14px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .StatRow{
+                    display: flex;
+                    gap: 10px;
+                    .StatIcon{
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: $color-row;
+                        border-radius: 12px;
+                    }
+                    .StatInfo{
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background: $color-row;
+                        border-radius: 12px;
+                        padding: 0 16px;
+                        font-family: "Roboto Mono", monospace;
+                        text-transform: uppercase;
+                        .StatLabel{
+                            font-size: 12px;
+                            color: $color-text;
+                        }
+                        .StatValue{
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: $color-title;
+                            padding-right: 8px;
+                            margin-right: 8px;
+                            border-right: 1px solid #333333;
+                        }
+                        .StatUnit{
+                            font-size: 10px;
+                            color: $color-muted;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .RelatedBorder{
+        width: 95%;
+        box-sizing: border-box;
+        margin-top: 60px;
+        padding: 15px;
+        border: 3px solid #1F1F1F;
+        border-radius: 15px;
+
+        .RelatedHeader{
+            height: 114px;
+            padding: 0 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: $color-card;
+            border-radius: 14px;
+            .RelatedTitle{
+                color: $color-title;
+                font-size: 48px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+
+        .RelatedGrid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            .RelatedCard{
+                display: flex;
+                flex-direction: column;
+                background: $color-card;
+                border-radius: 14px;
+                padding: 15px 15px 30px;
+                .RelatedImg{
+                    width: 100%;
+                    aspect-ratio: 311 / 189;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-bottom: 25px;
+                }
+                .RelatedCardTitle{
+                    color: $color-title;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-transform: uppercase;
+                    padding: 0 15px;
+                    margin-bottom: 12px;
+                }
+                .RelatedCardText{
+                    color: $color-text;
+                    font-size: 13px;
+                    font-weight: 300;
+                    line-height: 1.6;
+                    padding: 0 15px;
+                    margin-bottom: 40px;
+                }
+                .RelatedLink{
+                    margin-top: auto;
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .RelatedLink{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $color-text;
+            font-family: "Roboto Mono", monospace;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            img{
+                width: 52px;
+                height: 52px;
+            }
+        }
+    }
+}

@@ -1,0 +1,455 @@
+
+$color-bg-main: #000000;
+
+$color-bg-card: #141414;
+$color-text-white: #ffffff;
+$color-accent: #e58d73;
+$font-main: 'Inter', sans-serif;
+
+$team-color-bg-photo: #e5a999; 
+$team-font-main: 'Inter', sans-serif;
+
+$color-bg-card-textBg: #1F1F1F;
+
+$color-text-muted: #8c8c8c;
+$color-accent: #e07a5f;
+$font-main: 'Arial', sans-serif;
+
+
+.headerBlockBot {
+  background-color: #000000;
+
+  font-family: $font-main;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+   
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-self: center;
+  
+}
+
+
+.main {
+  width: 60%;
+  height: 30vh;
+  background-color: $color-bg-card;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  // margin: 20px 0  0 0;
+  // padding:  0 0 0 5%   ;
+  flex-direction: row;
+  align-items: center;
+  img{
+
+    margin-bottom: 6%;
+    flex-shrink: 0;
+  }
+}
+
+.title {
+  color: $color-text-white;
+  font-size: clamp(2rem, 4vw, 2.8rem); 
+  font-weight: 700;
+line-height: 150%;
+  margin-right: 2%;
+  text-transform: uppercase;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &Icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Text {
+    color: $color-accent;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  // margin: 20px 0  0 0;
+  background-color: $color-bg-card; 
+  border-radius: 12px;
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sidegde{
+    width: 80%;
+    height: 70%;
+    color: #B3B3B2;
+    display: flex;
+      justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  }
+}
+
+.more {
+  align-self: start; 
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+    color: white;
+
+}
+.Space{
+  width: 100%;
+  height: 10vh;
+}
+
+.containerNex{
+  width: 95%;
+   
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-self: center;
+
+  border: $color-bg-card;
+
+  border: 3px solid $color-bg-card;
+  border-radius: 15px;
+/// имба, 
+/// По умолчанию в CSS добавление внутренних отступов (padding)
+///  раздувает карточку наружу. border-box заставит карточку сохранять
+///  свой фиксированный внешний размер, а все отступы пойдут строго внутрь.
+  box-sizing: border-box;
+  padding: 15px; 
+}
+
+.vacanciesSection {
+  background-color: $color-bg-main;
+  color: $color-text-white;
+  font-family: $font-main;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.titleNex {
+
+  background:  $color-bg-card;
+  width: 100%;
+  height: 120px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-indent: 20px;
+
+  border-radius: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+
+
+}
+
+.card {
+
+  background-color: $color-bg-card;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.detailsBtn {
+  background: none;
+  border: none;
+  color: #8c8c8c;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-text-white;
+  }
+
+
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 4vh;
+
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  padding-bottom: 2%;
+
+
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  border-radius: 45px;
+  background-color: $color-bg-card-textBg;
+    height: 4vh;
+  margin-right: 15px;
+}
+
+.metaLabel {
+  color: #8c8c8c;
+  margin: 15px;
+
+
+}
+
+.metaValue {
+  color: $color-text-white;
+  margin-right: 15px;
+}
+
+.skillsSection {
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.skillsTitle {
+  font-size: 24px;
+  color: $color-text-white;
+  margin: 0 0 12px 0;
+  letter-spacing: 1px;
+}
+
+.skillsText {
+  font-size: 0.85rem;
+  color: #8c8c8c;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.applyBtn {
+  background-color: $color-accent;
+  color: #1a0d0a;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+
+}
+
+
+
+
+
+
+
+//fe'eeee '' sss
+
+
+.titleNexTwo {
+  color: $color-text-white;
+  background:  $color-bg-card;
+  width: 100%;
+  height: 120px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-indent: 40px;
+
+  border-radius: 15px;
+}
+
+.applySection {
+  background-color: $color-bg-main;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.applyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.applyCard {
+  background-color: $color-bg-card;
+  border-radius: 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  min-height: 340px; /* Чтобы карточки были одинаковой высоты */
+}
+
+.stepNumber {
+  font-family: $font-main;
+  color: $color-text-muted;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.stepTitle {
+  font-family: $font-main;
+  color: $color-text-white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: $color-bg-card-textBg;
+  text-indent: 25px;
+  border-color: #262626;
+  border-width: 5px;
+}
+
+.stepText {
+  font-family: $font-main;
+  color: #a3a3a3; 
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: auto; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 30%;
+
+}
+
+.knowMoreBtn {
+  background: none;
+  border: none;
+  color: $color-text-white;
+  font-family: $font-main;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+width: 90%;
+height: 20%;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.arrowDown {
+  font-size: 1.1rem;
+}
+
+
